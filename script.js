@@ -201,6 +201,12 @@ import {
 
     listenGuests();
 
+    document.getElementById("copyRek")?.addEventListener("click", () => {
+      navigator.clipboard.writeText("0083455681");
+      alert("Nomor rekening berhasil disalin 📋");
+    });
+
+
     /* ===================== SCROLL ANIMATION ===================== */
     const observer = new IntersectionObserver(entries => {
       entries.forEach(e => {
